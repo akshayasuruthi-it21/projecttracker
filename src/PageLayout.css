@@ -1,0 +1,57 @@
+.outer-layout {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  flex: 3 1 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.grid-container {
+  font-family: Roboto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex: 1 1;
+  margin: 5px;
+  max-width: calc(100% - 10px);
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: rgba(214, 214, 214, 0.5) 2px 1px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.circle {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  color: white;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+}

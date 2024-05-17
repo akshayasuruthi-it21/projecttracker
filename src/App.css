@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/********** Template CSS **********/
+:root {
+  --primary: #6244c5;
+  --secondary: #ffc448;
+  --light: #fafafb;
+  --dark: #12141d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+/*** Skills ***/
+#skill .progress {
+  height: 5px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#skill .progress .progress-bar {
+  width: 0px;
+  border-radius: 5px;
+  transition: 3s;
+}
+
+#skill .nav-pills .nav-link {
+  color: var(--dark);
+}
+
+#skill .nav-pills .nav-link.active {
+  color: #ffffff;
+}
+
+#skill .tab-content hr {
+  width: 30px;
 }
